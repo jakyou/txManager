@@ -1,10 +1,9 @@
-package com.appmozi.tx.mq.service.impl;
+package com.lorne.tx.mq.service.impl;
 
 import com.alibaba.dubbo.rpc.RpcContext;
-import com.appmozi.tx.manager.service.TxManagerService;
-import com.appmozi.tx.mq.model.TxGroup;
-import com.appmozi.tx.mq.model.TxInfo;
-import com.appmozi.tx.mq.service.MQTxManagerService;
+import com.lorne.tx.manager.service.TxManagerService;
+import com.lorne.tx.mq.model.TxGroup;
+import com.lorne.tx.mq.service.MQTxManagerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

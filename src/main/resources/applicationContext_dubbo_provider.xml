@@ -15,9 +15,9 @@
 
     <dubbo:protocol accesslog="true" name="dubbo" port="${dubbo.port}" />
 
-    <dubbo:service interface="com.appmozi.tx.mq.service.MQTxManagerService" ref="managerService" />
+    <dubbo:service interface="com.lorne.tx.mq.service.MQTxManagerService" ref="managerService" />
 
-    <bean id="managerService" class="com.appmozi.tx.mq.service.impl.MQTxManagerServiceImpl"  />
+    <bean id="managerService" class="com.lorne.tx.mq.service.impl.MQTxManagerServiceImpl"  />
 
 
 </beans>

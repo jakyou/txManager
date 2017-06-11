@@ -1,7 +1,6 @@
-package com.appmozi.tx.mq.service;
+package com.lorne.tx.mq.service;
 
-import com.appmozi.tx.mq.model.TxGroup;
-import com.appmozi.tx.mq.model.TxInfo;
+import com.lorne.tx.mq.model.TxGroup;
 
 /**
  * Created by lorne on 2017/6/7.

@@ -1,4 +1,4 @@
-package com.appmozi.tx.mq.service;
+package com.lorne.tx.mq.service;
 
 /**
  * Created by lorne on 2017/6/7.

@@ -1,13 +1,13 @@
-package com.appmozi.tx.manager.service.impl;
+package com.lorne.tx.manager.service.impl;
 
 import com.alibaba.dubbo.config.spring.ReferenceBean;
-import com.appmozi.Constants;
-import com.appmozi.tx.manager.service.TransactionConfirmService;
-import com.appmozi.tx.mq.model.TxGroup;
-import com.appmozi.tx.mq.model.TxInfo;
-import com.appmozi.tx.mq.service.MQTransactionService;
-import com.le.core.framework.utils.thread.CountDownLatchHelper;
-import com.le.core.framework.utils.thread.IExecute;
+import com.lorne.Constants;
+import com.lorne.tx.manager.service.TransactionConfirmService;
+import com.lorne.tx.mq.model.TxGroup;
+import com.lorne.tx.mq.model.TxInfo;
+import com.lorne.tx.mq.service.MQTransactionService;
+import com.lorne.core.framework.utils.thread.CountDownLatchHelper;
+import com.lorne.core.framework.utils.thread.IExecute;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;

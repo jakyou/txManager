@@ -1,6 +1,6 @@
-package com.appmozi.tx.mq.model;
+package com.lorne.tx.mq.model;
 
-import com.le.core.framework.model.JsonModel;
+import com.lorne.core.framework.model.JsonModel;
 
 /**
  * Created by lorne on 2017/6/7.

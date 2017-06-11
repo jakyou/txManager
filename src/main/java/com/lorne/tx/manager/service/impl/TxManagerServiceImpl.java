@@ -1,12 +1,12 @@
-package com.appmozi.tx.manager.service.impl;
+package com.lorne.tx.manager.service.impl;
 
-import com.appmozi.tx.manager.service.TransactionConfirmService;
-import com.appmozi.tx.manager.service.TxManagerService;
-import com.appmozi.tx.mq.model.TxGroup;
-import com.appmozi.tx.mq.model.TxInfo;
-import com.le.core.framework.utils.ConfigurationUtils;
-import com.le.core.framework.utils.KidUtils;
-import com.le.core.framework.utils.RedisUtil;
+import com.lorne.tx.manager.service.TransactionConfirmService;
+import com.lorne.tx.manager.service.TxManagerService;
+import com.lorne.tx.mq.model.TxGroup;
+import com.lorne.tx.mq.model.TxInfo;
+import com.lorne.core.framework.utils.ConfigurationUtils;
+import com.lorne.core.framework.utils.KidUtils;
+import com.lorne.core.framework.utils.RedisUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import redis.clients.jedis.Jedis;
