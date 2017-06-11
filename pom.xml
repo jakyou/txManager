@@ -12,9 +12,11 @@
         </repository>
     </repositories>
 
-    <groupId>tx-manager</groupId>
+
+    <groupId>com.lorne.tx</groupId>
     <artifactId>tx-manager</artifactId>
     <version>1.0.0</version>
+
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
