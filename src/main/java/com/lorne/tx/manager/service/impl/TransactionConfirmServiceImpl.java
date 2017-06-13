@@ -40,13 +40,24 @@ public class TransactionConfirmServiceImpl implements TransactionConfirmService 
                 checkState = false;
             }
         }
-        //检查网络状态是否正常
-        if(checkState){
-            checkState = checkRollback(txGroup.getList());
+
+        //事务不满足直接回滚事务
+        if(!checkState){
+            transaction(txGroup.getList(),0);
+            return;
         }
 
-        //通知事务
-        transaction(txGroup.getList(),checkState);
+
+        //检查网络状态是否正常
+        boolean netState  = checkRollback(txGroup.getList());
+
+        if(netState){
+            //通知事务
+            transaction(txGroup.getList(),1);
+        }else{
+            transaction(txGroup.getList(),-1);
+        }
+
     }
 
 
@@ -112,7 +123,7 @@ public class TransactionConfirmServiceImpl implements TransactionConfirmService 
      * @param list
      * @param checkSate
      */
-    private void transaction(List<TxInfo> list,final boolean checkSate){
+    private void transaction(List<TxInfo> list,final int checkSate){
         for(final TxInfo info:list){
             final  String url = info.getUrl();
             if (StringUtils.isNotEmpty(url)) {
